@@ -23,10 +23,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use('/', express.static('./public'));
 
-// app.use('/', 'indexRouter');
 app.get("/testApi", (req, res) => {
   res.send("working fine");
 });
+
+app.use('/', indexRouter);
 app.use("/login", loginRouter);
 app.use("/userdetails", usersRouter);
 app.use("/flights",homePage);
