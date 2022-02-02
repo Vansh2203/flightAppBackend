@@ -1,0 +1,87 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('firstdb');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.persons.drop();
+
+// Insert a few documents into the sales collection.
+db.persons.insertMany([{
+  "id": 1,
+  "first_name": "Zackariah",
+  "last_name": "Spatig",
+  "email": "zspatig0@springer.com",
+  "gender": "Male",
+  "ip_address": "111.30.141.69"
+}, {
+  "id": 2,
+  "first_name": "Joyan",
+  "last_name": "Bartrop",
+  "email": "jbartrop1@i2i.jp",
+  "gender": "Male",
+  "ip_address": "181.137.172.129"
+}, {
+  "id": 3,
+  "first_name": "Alison",
+  "last_name": "Guihen",
+  "email": "aguihen2@twitpic.com",
+  "gender": "Female",
+  "ip_address": "244.19.74.171"
+}, {
+  "id": 4,
+  "first_name": "Rafa",
+  "last_name": "Daniello",
+  "email": "rdaniello3@craigslist.org",
+  "gender": "Male",
+  "ip_address": "151.213.93.113"
+}, {
+  "id": 5,
+  "first_name": "Carine",
+  "last_name": "Zisneros",
+  "email": "czisneros4@is.gd",
+  "gender": "Female",
+  "ip_address": "14.141.101.255"
+}, {
+  "id": 6,
+  "first_name": "Berty",
+  "last_name": "Heads",
+  "email": "bheads5@bigcartel.com",
+  "gender": "Male",
+  "ip_address": "221.169.189.56"
+}, {
+  "id": 7,
+  "first_name": "Tamarra",
+  "last_name": "Veschambes",
+  "email": "tveschambes6@dedecms.com",
+  "gender": "Male",
+  "ip_address": "127.84.158.155"
+}, {
+  "id": 8,
+  "first_name": "Angela",
+  "last_name": "Ewins",
+  "email": "aewins7@ucla.edu",
+  "gender": "Female",
+  "ip_address": "173.221.24.226"
+}, {
+  "id": 9,
+  "first_name": "Leo",
+  "last_name": "Donald",
+  "email": "ldonald8@ed.gov",
+  "gender": "Male",
+  "ip_address": "142.247.12.157"
+}, {
+  "id": 10,
+  "first_name": "Amby",
+  "last_name": "Mattiazzo",
+  "email": "amattiazzo9@last.fm",
+  "gender": "Male",
+  "ip_address": "66.120.223.60"
+}]);
+
+// db.persons.countDocuments();
+// db.persons.find({ "gender": "Female"})

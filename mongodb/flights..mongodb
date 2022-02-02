@@ -1,0 +1,104 @@
+const database = "firstdb";
+const collection = "flights";
+
+// The current database to use.
+use(database);
+db.flights.drop();
+
+let dateclass = new Date();
+let date = dateclass.toLocaleDateString();
+let time = dateclass.toLocaleTimeString();
+
+db.flights.insertMany([
+  {
+    id: 0,
+    route: { from: "delhi", to: "bangalore" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://lp-cms-production.imgix.net/2019-06/9483508eeee2b78a7356a15ed9c337a1-bengaluru-bangalore.jpg",
+  },
+  {
+    id: 1,
+    route: { from: "delhi", to: "chennai" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://images.news18.com/ibnlive/uploads/2021/09/marina-beach-16309131183x2.jpg?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal",
+  },
+  {
+    id: 2,
+    route: { from: "delhi", to: "coimbatore" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://cdn1.goibibo.com/voy_ing/t_fs/tamil-nadu-coimbatore-149343899978o.jpeg",
+  },
+  {
+    id: 3,
+    route: { from: "delhi", to: "pune" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://img.veenaworld.com/wp-content/uploads/2018/10/pune-city-kalpataru.jpg?imwidth=1080",
+  },
+  {
+    id: 4,
+    route: { from: "delhi", to: "kolkata" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://i.pinimg.com/236x/ba/79/ff/ba79ff51c9b200647676f1c3d607c654.jpg",
+  },
+  {
+    id: 5,
+    route: { from: "delhi", to: "mumbai" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bXVtYmFpfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+  },
+  {
+    id: 6,
+    route: { from: "delhi", to: "assam" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://assets.sentinelassam.com/h-upload/2021/02/01/1600x960_194824-tea-garden-1.jpg",
+  },
+  {
+    id: 7,
+    route: { from: "delhi", to: "jaipur" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://www.tourmyindia.com/socialimg/jaipur-tourism-rajasthan.jpg",
+  },
+  {
+    id: 8,
+    route: { from: "delhi", to: "solapur" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://cr.indianrailways.gov.in/cris//uploads/files/1555409718276-SUR3.png",
+  },
+  {
+    id: 9,
+    route: { from: "delhi", to: "chandigarh" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://image3.mouthshut.com/images/imagesp/925004336s.jpg",
+  },
+  {
+    id: 10,
+    route: { from: "delhi", to: "roorkee" },
+    price: Math.floor(Math.random() * 5000),
+    date: date,
+    time: time,
+    imgSrc: "https://images.unsplash.com/photo-1599634875158-597d3f647df6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aWl0JTIwcm9vcmtlZXxlbnwwfHwwfHw%3D&w=1000&q=80",
+  },
+]);
+
+
+// db.flights.find({},{_id:0})
