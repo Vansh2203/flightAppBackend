@@ -26,6 +26,7 @@ router.get("/", async function (req, res) {
   }
   console.log(flightArr);
   res.json(flightArr);
+  res.send("hello world");
 });
 
 module.exports = router;
