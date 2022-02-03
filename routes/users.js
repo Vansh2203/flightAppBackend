@@ -1,7 +1,8 @@
 var express = require("express");
 var { MongoClient } = require("mongodb");
+var connectionString = require("../mongodb/connectionstring")
 
-const connectionString = "mongodb://localhost:27017";
+// const connectionString = "mongodb://localhost:27017";
 var router = express.Router();
 const client = new MongoClient(connectionString, { useUnifiedTopology: true });
 
